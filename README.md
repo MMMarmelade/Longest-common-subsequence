@@ -15,8 +15,7 @@ subproblem: the first i items of string X and the first j items of string Y (Xi 
 
 recursive formula:
 
-			C[i,j] = 	
-				0				i==0 or j==0
+			C[i,j]= 0				i==0 or j==0
 
 				or  C[i-1,j-1]+1	        i,j>0,X[i]==Y[j]
 
@@ -50,8 +49,7 @@ C and B is one-to-one correspondence.
 
 递推方程：
 		
-		C[i,j]=	
-			0	                     	i==0 or j==0
+		C[i,j]= 0	                     	i==0 or j==0
 
 			or  C[i-1,j-1]+1	        i,j>0,X[i]==Y[j]
 
