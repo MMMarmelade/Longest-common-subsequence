@@ -13,9 +13,11 @@ dynamic programming:
 
 subproblem: the first i items of string X and the first j items of string Y (Xi and Yj)
 
-recursive formula:C[i,j]=	0	              i==0 or j==0
+recursive formula:
+			C[i,j]=	
+				0	              		i==0 or j==0
 
-				or  C[i-1,j-1]+1	          i,j>0,X[i]==Y[j]
+				or  C[i-1,j-1]+1	        i,j>0,X[i]==Y[j]
 
 				or  max{C[i-1,j],C[i,j-1]}	i,j>0,X[i]!=Y[j]
 
@@ -45,9 +47,11 @@ C and B is one-to-one correspondence.
 
 子问题：字符串X的前i项，字符串Y的前j项
 
-递推方程：C[i,j]=	0	                     i==0 or j==0
+递推方程：
+		C[i,j]=	
+			0	                     	i==0 or j==0
 
-			or  C[i-1,j-1]+1	          i,j>0,X[i]==Y[j]
+			or  C[i-1,j-1]+1	        i,j>0,X[i]==Y[j]
 
 			or  max{C[i-1,j],C[i,j-1]}	i,j>0,X[i]!=Y[j]
 
