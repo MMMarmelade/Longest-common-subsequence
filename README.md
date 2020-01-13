@@ -14,8 +14,9 @@ dynamic programming:
 subproblem: the first i items of string X and the first j items of string Y (Xi and Yj)
 
 recursive formula:
-			C[i,j]=	
-				0	              		i==0 or j==0
+
+			C[i,j] = 	
+				0				i==0 or j==0
 
 				or  C[i-1,j-1]+1	        i,j>0,X[i]==Y[j]
 
@@ -32,7 +33,7 @@ C and B is one-to-one correspondence.
 
 
 
-最近在https://www.bilibili.com/video/av7134874 算法设计与分析的课程，北大的屈婉玲教授讲解。
+最近在https://www.bilibili.com/video/av7134874 学习算法设计与分析的课程，北大的屈婉玲教授讲解。
 
 这是最长公共子序列问题的一个实现，利用了动态规划算法思想。
 
@@ -48,6 +49,7 @@ C and B is one-to-one correspondence.
 子问题：字符串X的前i项，字符串Y的前j项
 
 递推方程：
+		
 		C[i,j]=	
 			0	                     	i==0 or j==0
 
