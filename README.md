@@ -5,9 +5,9 @@ function of algorithm: get the LCS of two sequences
 input of algorithm: string X and string Y
 output of algorithm: LCS
 
-dynamic programming:
-  subproblem: the first i items of string X and the first j items of string Y (Xi and Yj)
-  recursive formula:C[i,j]=	0	              i==0 or j==0
+#dynamic programming:
+  ##subproblem: the first i items of string X and the first j items of string Y (Xi and Yj)
+  ##recursive formula:C[i,j]=	0	              i==0 or j==0
 	       				or  C[i-1,j-1]+1	          i,j>0,X[i]==Y[j]
 					      or  max{C[i-1,j],C[i,j-1]}	i,j>0,X[i]!=Y[j]
             C[i,j] means that the length of LCS of Xi and Yj
@@ -29,3 +29,5 @@ dynamic programming:
 					      or  max{C[i-1,j],C[i,j-1]}	i,j>0,X[i]!=Y[j]
             C[i,j]是子问题Xi和Yj的LCS的长度
 	标记函数：B[i,j],根据划分子问题时的方向，分LEFT，UPPER，LANDU
+
+在具体代码实现中，较容易出错的地方在于，B和C的大小为（m+1）*（n+1），因为对于C第0行和第0列代表长度为0的边界情况
